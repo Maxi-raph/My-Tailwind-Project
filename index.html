@@ -13,10 +13,10 @@
         screens: {
           // Max-width breakpoints (desktop-first)
           'max-xs': {'max': '479px'},   // phones ≤480px
-          'max-sm': {'max': '639px','min':'480px'},   // small devices ≤639px
-          'max-md': {'max': '767px','max': '640px'},   // tablets ≤767px
-          'max-lg': {'max': '1023px','min': '768px'},  // laptops ≤1023px
-          'max-xl': {'max': '1279px', 'min': '1024px'},  // desktops ≤1279px
+          'max-sm': {'max': '639px','min':'480px'},   // small devices ≤639px and >= 480px
+          'max-md': {'max': '767px','min': '640px'},   // tablets ≤767px and >= 640px
+          'max-lg': {'max': '1023px','min': '768px'},  // laptops ≤1023px and >=768px
+          'max-xl': {'max': '1279px', 'min': '1024px'},  // desktops ≤1279px and >= 1024px
 
           // Optional: ranges
           'tablet-only': {'min': '640px', 'max': '1023px'},
@@ -38,35 +38,35 @@
 </style>  
 </head>
 <body>
-    <main class="bg-[url(images/Rectangle6.png)] bg-cover min-h-screen p-6 w-full max-xs:p-3">
-   <nav class="flex justify-between items-center w-full p-4 max-xs:relative max-xs:justify-between max-lg:p-2">  
+    <main class="bg-[url(images/Rectangle6.png)] bg-cover min-h-screen p-6 w-full max-md:p-2 max-sm:p-3 max-xs:p-3">
+   <nav class="flex justify-between items-center w-full p-4 max-lg:p-2 max-md:p-2 max-sm:relative max-sm:justify-between max-xs:relative max-xs:justify-between">  
     <div class="flex flex-col items-center">
-        <img src="images/Group 1205.png" class="w-18 h-18 max-lg:w-10 max-xs:w-8" alt="">
-        <span class="text-xl text-white font-Quicksand max-xl:text-[16px] max-lg:text-[14px] max-xs:text-[10px]">Unwind spa</span> 
+        <img src="images/Group 1205.png" class="w-18 h-18 max-lg:w-10 max-md:w-6 max-sm:w-8 max-xs:w-8" alt="">
+        <span class="text-xl text-white font-Quicksand max-xl:text-[16px] max-lg:text-[14px] max-md:text-[7px] max-sm:text-[10px] max-xs:text-[10px]">Unwind spa</span> 
     </div>
-    <ul class="flex gap-16 p-9 max-lg:p-2 max-lg:gap-2 max-xs:flex-col  max-xs:absolute  max-xs:w-[220px] max-xs:bg-[#FFACAA99]  max-xs:items-center  max-xs:rounded-[12px]  max-xs:top-16 max-xs:right-0  max-xs:gap-0  max-xs:p-0 max-xs:hidden">
-        <li class="text-white text-md hover:bg-[#FFACAC] p-2 rounded-md w-28 text-center max-xl:text-sm max-lg:w-18 max-xs:text-[black] max-xs:border-b-2  max-xs:border-b-white  max-xs:w-full  max-xs:rounded-tr-[12px] max-xs:rounded-tl-[12px] max-xs:rounded-b-none max-xs:pt-4 max-xs:pb-4"><a href="#services">Our sevices</a></li>
-        <li class="text-white text-md hover:bg-[#FFACAC] p-2 rounded-md w-28 text-center max-xl:text-sm max-lg:w-18 max-xs:text-[black] max-xs:border-b-2  max-xs:border-b-white  max-xs:w-full  max-xs:rounded-none  max-xs:pt-4  max-xs:pb-4"><a href="#about">About us</a></li>
-        <li class="text-white text-md hover:bg-[#FFACAC] p-2 rounded-md w-28 text-center max-xl:text-sm max-lg:w-18 max-xs:text-[black] max-xs:border-b-2  max-xs:border-b-white  max-xs:w-full  max-xs:rounded-none  max-xs:pt-4  max-xs:pb-4"><a href="#blog">Blog</a></li>
-        <li class="text-white text-md hover:bg-[#FFACAC] p-2 rounded-md w-28 text-center max-xl:text-sm max-lg:w-18 max-xs:text-[black] max-xs:w-full max-xs:rounded-br-[12px] max-xs:rounded-bl-[12px] max-xs:rounded-t-none max-xs:pt-4  max-xs:pb-4"><a href="#contact">Contact</a></li>
+    <ul class="flex gap-16 p-9 max-lg:p-2 max-lg:gap-2 max-md:gap-2 max-md:p-1 max-sm:flex-col max-sm:absolute  max-sm:w-full max-sm:bg-[#FFACAA99] max-sm:items-center max-sm:rounded-[12px] max-sm:top-24 max-sm:right-0 max-sm:gap-0  max-sm:p-0 max-sm:hidden max-xs:flex-col max-xs:absolute  max-xs:w-full max-xs:bg-[#FFACAA99]  max-xs:items-center  max-xs:rounded-[12px]  max-xs:top-20 max-xs:right-0  max-xs:gap-0  max-xs:p-0 max-xs:hidden">
+        <li class="text-white text-md hover:bg-[#FFACAC] p-2 rounded-md w-28 text-center max-xl:text-sm max-lg:w-18 max-md:w-15 max-md:text-xs max-sm:text-[black] max-sm:border-b-2  max-sm:border-b-white  max-sm:w-full max-sm:rounded-tr-[12px] max-sm:rounded-tl-[12px] max-sm:rounded-b-none max-sm:pt-4 max-sm:pb-4 max-xs:text-[black] max-xs:border-b-2  max-xs:border-b-white  max-xs:w-full  max-xs:rounded-tr-[12px] max-xs:rounded-tl-[12px] max-xs:rounded-b-none max-xs:pt-2 max-xs:pb-2"><a href="#services">Our Services</a></li>
+        <li class="text-white text-md hover:bg-[#FFACAC] p-2 rounded-md w-28 text-center max-xl:text-sm max-lg:w-18 max-md:w-15 max-md:text-xs max-sm:text-[black] max-sm:border-b-2  max-sm:border-b-white  max-sm:w-full max-sm:rounded-b-none max-sm:pt-4 max-xs:text-[black] max-xs:border-b-2  max-xs:border-b-white  max-xs:w-full  max-xs:rounded-none  max-xs:pt-2  max-xs:pb-2"><a href="#about">About Us</a></li>
+        <li class="text-white text-md hover:bg-[#FFACAC] p-2 rounded-md w-28 text-center max-xl:text-sm max-lg:w-18 max-md:w-15 max-md:text-xs max-sm:text-[black] max-sm:border-b-2  max-sm:border-b-white  max-sm:w-full max-sm:rounded-b-none max-sm:pt-4 max-xs:text-[black] max-xs:border-b-2  max-xs:border-b-white  max-xs:w-full  max-xs:rounded-none  max-xs:pt-2  max-xs:pb-2"><a href="#blog">Blog</a></li>
+        <li class="text-white text-md hover:bg-[#FFACAC] p-2 rounded-md w-28 text-center max-xl:text-sm max-lg:w-18 max-md:w-15 max-md:text-xs max-sm:text-[black] max-sm:w-full max-sm:rounded-tr-[12px] max-sm:rounded-tl-[12px] max-sm:rounded-b-none max-sm:pt-4 max-xs:w-full max-xs:rounded-br-[12px] max-xs:rounded-bl-[12px] max-xs:rounded-t-none max-xs:pt-2  max-xs:pb-2 max-xs:text-[black]"><a href="#contact">Contact</a></li>
     </ul>
-    <div class="flex justify-between gap-10 max-lg:gap-6 max-xs:gap-4 items-center">
-        <img src="images/MagnifyingGlass.png" class="w-10 h-10 max-xl:w-7 max-xl:h-7 max-lg:w-5 max-lg:h-5" alt="">
-        <img src="images/Ellipse144.png" class="w-10 h-10 max-xl:w-7 max-xl:h-7 max-lg:w-5 max-lg:h-5" alt="">
-        <span class=" max-xs:w-5 max-xs:h-[2px] max-xs:block max-xs:z-0 max-xs:bg-[black] max-xs:relative max-xs:before:content-['']  max-xs:before:w-5 max-xs:before:h-[2px] max-xs:before:absolute max-xs:before:z-10 max-xs:before:bottom-2 max-xs:before:inline-block max-xs:before:bg-[black] max-xs:after:content-[''] max-xs:after:absolute max-xs:after:-z-10 max-xs:after:top-2  max-xs:after:w-5 max-xs:after:inline-block  max-xs:after:h-[2px] max-xs:after:bg-[black]"></span>
+    <div class="flex justify-between gap-10 max-lg:gap-6 max-md:gap-6 max-xs:gap-4 items-center">
+        <img src="images/MagnifyingGlass.png" class="w-10 h-10 max-xl:w-7 max-xl:h-7 max-lg:w-5 max-lg:h-5 max-md:w-5 max-md:h-5 max-sm:w-6 max-sm:h-6 max-xs:w-6 max-xs:h-6" alt="">
+        <img src="images/Ellipse144.png" class="w-10 h-10 max-xl:w-7 max-xl:h-7 max-lg:w-5 max-lg:h-5 max-md:w-5 max-md:h-5 max-sm:w-6 max-sm:h-6 max-xs:w-6 max-xs:h-6" alt="">
+        <span class=" max-sm:w-5 max-sm:h-[2px] max-sm:block max-sm:z-0 max-sm:bg-[black] max-sm:relative max-sm:before:content-['']  max-sm:before:w-5 max-sm:before:h-[2px] max-sm:before:absolute max-sm:before:z-10 max-sm:before:bottom-2 max-sm:before:inline-block max-sm:before:bg-[black] max-sm:after:content-[''] max-sm:after:absolute max-sm:after:-z-10 max-sm:after:top-2  max-sm:after:w-5 max-sm:after:inline-block  max-sm:after:h-[2px] max-sm:after:bg-[black] max-xs:w-5 max-xs:h-[2px] max-xs:block max-xs:z-0 max-xs:bg-[black] max-xs:relative max-xs:before:content-['']  max-xs:before:w-5 max-xs:before:h-[2px] max-xs:before:absolute max-xs:before:z-10 max-xs:before:bottom-2 max-xs:before:inline-block max-xs:before:bg-[black] max-xs:after:content-[''] max-xs:after:absolute max-xs:after:-z-10 max-xs:after:top-2  max-xs:after:w-5 max-xs:after:inline-block  max-xs:after:h-[2px] max-xs:after:bg-[black]"></span>
     </div>
    </nav> 
-     <div class=" flex justify-between p-10 mt-24 w-full max-xs:pl-1 max-xs:pr-1 max-lg:pt-32">
-        <div class="flex container flex-col items-center justify-center w-[26%] max-xs:w-[40%]">
-            <h2 class="text-5xl font-radley text-white mb-6 font-radley max-xl:text-4xl max-lg:text-3xl max-xs:text-xl">Unwind Spa</h2>
-            <p class="text-lg text-white font-Quicksand text-center mb-5 max-xs:text-sm">Relax, have fun, and have all your beauty, skin and body needs catered to.</p>
-            <button class="w-44 rounded-md mb-3 p-3 text-sm bg-[#FFACAC] text-white max-xs:text-xs max-xs:p-2 max-xs:w-32">Book Appointment</button>
+     <div class=" flex justify-between p-10 mt-24 w-full max-xs:pl-1 max-xs:pr-1 max-lg:pt-32 max-md:p-2 max-sm:mt-32  max-sm:p-2  max-xs:min-h-">
+        <div class="flex container flex-col items-center justify-center w-[26%] max-md:w-[35%] max-sm:w-[47%] max-xs:w-[40%]">
+            <h2 class="text-5xl font-radley text-white mb-6 font-radley max-xl:text-4xl max-lg:text-3xl max-md:text-3xl max-sm:text-xl max-sm:mb-3 max-xs:text-xl">Unwind Spa</h2>
+            <p class="text-lg text-white font-Quicksand text-center mb-5 max-md:text-sm max-sm:text-sm max-xs:text-sm">Relax, have fun, and have all your beauty, skin and body needs catered to.</p>
+            <button class="w-44 rounded-md mb-3 p-3 text-sm bg-[#FFACAC] text-white max-md:text-sm max-md:p-2 max-sm:text-xs max-sm:p-2 max-sm:w-32 max-xs:text-xs max-xs:p-2 max-xs:w-32">Book Appointment</button>
         </div>
-        <div class=" bg-[#FFACAC] rounded-xl flex flex-col justify-center items-center p-6 pb-9 w-[29%] max-xl:w-[39%] max-lg:w-[51%] max-xs:w-[50%]">
-<h3 class="text-white text-2xl mt-5  mb-3 after:content-[''] after:block after:w-16 after:h-0.5 after:bg-white after:mt-3 after:m-auto max-lg:mt-0 max-xl:text-xl max-xl:mt-3 max-lg:font-bold max-xs:">
+        <div class=" bg-[#FFACAC] rounded-xl flex flex-col justify-center items-center p-6 pb-9 w-[29%] max-xl:w-[39%] max-lg:w-[51%] max-md:w-[51%] max-sm:p-4  max-xs:p-4 max-sm:w-[48%] max-xs:w-[50%]">
+<h3 class="text-white text-2xl mt-5  mb-3 after:content-[''] after:block after:w-16 after:h-0.5 after:bg-white after:mt-3 after:m-auto max-lg:mt-0 max-xl:text-xl max-xl:mt-3 max-lg:font-bold max-md:text-2xl max-md:mt-0  max-sm:text-lg  max-sm:mt-0 max-sm:after:mt-1  max-xs:after:mt-1 max-xs:mt-0  max-xs:text-md">
   Opening Hours
 </h3>
-<div class="flex justify-between w-full text-white text-lg mt-4 max-xl:text-md ">
+<div class="flex justify-between w-full text-white text-lg mt-4 max-xl:text-md max-md:text-sm max-sm:text-xs max-sm:mt-1 max-xs:mt-1 max-xs:text-xs">
     <span>
         Monday-Wednesday
     </span>
@@ -74,7 +74,7 @@
         9am-7pm
     </span>
 </div>
-<div class="flex justify-between w-full text-white text-lg mt-4 max-xl:text-md ">
+<div class="flex justify-between w-full text-white text-lg mt-4 max-xl:text-md max-md:text-sm max-sm:text-xs  max-xs:text-xs">
     <span>
         Friday-Sunday
     </span>
@@ -82,7 +82,7 @@
         9am-9pm
     </span>
 </div>
-<div class="flex justify-between w-full text-white text-lg mt-4 max-xl:text-md ">
+<div class="flex justify-between w-full text-white text-lg mt-4 max-xl:text-md max-md:text-sm max-sm:text-xs  max-xs:text-xs">
     <span>
         Thursday
     </span>
@@ -93,147 +93,147 @@
         </div>
      </div>
       </main>
-      <section class="min-h-screen p-6 pb-16 w-full bg-[#FFACAC]  pt-16 max-lg:pt-3" id="about">
+      <section class="min-h-screen p-6 pb-16 w-full bg-[#FFACAC]  pt-16 max-lg:pt-3  max-md:pt-2 max-md:pb-12 max-md:p-6 max-md:min-h-[0] max-sm:min-h-[0] max-sm:pt-2 max-sm:pb-12 max-sm:p-2  max-xs:min-h-[0] max-xs:pt-2 max-xs:pb-12 max-xs:p-2 " id="about">
        <div class="flex justify-between  max-xl:pt-12 max-xl:pl-8 max-xl:pr-8 max-lg:flex-col max-lg:items-center max-lg:gap-10 max-lg:pt-12">
-         <div class="relative w-[25%] pl-16 max-lg:flex  max-lg:static max-lg:pl-0 justify-center max-lg:gap-16"> 
+         <div class="relative w-[25%] pl-16 max-lg:flex  max-lg:static max-lg:pl-0 justify-center max-lg:gap-16  max-md:hidden  max-sm:hidden  max-xs:hidden"> 
             <img src="images/Ellipse145.png" alt="" class="absolute w-60 h-60 z-1 max-xl:w-44 max-xl:h-44 max-lg:static max-lg:z-0 max-lg:w-[200px] max-lg:h-[200px]">
             <img src="images/Ellipse146.png" alt="" class="absolute w-60 h-60 z-2 ml-44 mt-32 max-xl:w-44 max-xl:h-44 max-lg:ml-0 max-lg:mt-0 max-lg:static max-lg:w-[200px] max-lg:h-[200px]">
             <img src="images/Ellipse147.png" alt="" class="absolute w-60 h-60 z-3 mt-[270px]  max-xl:w-44 max-xl:h-44 max-lg:static  max-lg:ml-0 max-lg:mt-0 max-lg:z-none max-lg:w-[200px] max-lg:h-[200px]">
          </div>
-         <div class=" flex flex-col items-center justify-center w-[44%] pt-6 max-xl:pt-0 max-lg:w-[90%] max-lg:pt-2">
-            <h2 class="text-white font-bold text-5xl after:content-[''] after:block after:w-80 after:h-0.5 after:bg-white after:mt-5 after:m-auto font-ebgaramond max-xl:text-4xl max-lg:text-3xl">Pampered to Perfection</h2>
-            <p class="text-white text-lg pl-12 pr-12 mt-7 max-xl:text-md xl:w-[600px] max-lg:w-[100%]">Unwind Spa is the number one place to enjoy world class treatment and premium services, in a peaceful, calm and tranquil environment designed to bring you the sought after peace and rest of mind body and soul. <br><br>
+         <div class=" flex flex-col items-center justify-center w-[44%] pt-6 max-xl:pt-0 max-lg:w-[90%] max-lg:pt-2 max-md:w-full max-sm:w-full max-xs:w-full">
+            <h2 class="text-white font-bold text-5xl after:content-[''] after:block after:w-80 after:h-0.5 after:bg-white after:mt-5 after:m-auto font-ebgaramond max-xl:text-4xl max-lg:text-3xl max-md:text-2xl max-md:text-center max-sm:text-xl max-sm:text-center max-xs:text-xl max-xs:text-center max-xs:after:w-full max-xs:after:mt-1">Pampered to Perfection</h2>
+            <p class="text-white text-lg pl-12 pr-12 mt-7 max-xl:text-md max-xl:w-[600px] max-lg:w-[100%] max-md:text-sm max-sm:text-xs max-xs:text-xs max-xs:mt-4">Unwind Spa is the number one place to enjoy world class treatment and premium services, in a peaceful, calm and tranquil environment designed to bring you the sought after peace and rest of mind body and soul. <br><br>
             The interiors of Unwind Spa was designed to create the perfect ambience of relaxation. We offer a wide variety of packeges and services from our qualifed and welcoming professionals.</p>
          </div>
        </div>
       </section>
       <section class="w-full pt-20 pb-20">
-        <div class="flex justify-between m-auto relative rounded-tl-[68px]  bg-[#7DC290] w-[970px] h-72 after:top-6 after:content-['']  after:w-[970px] after:h-72 after:left-6 after:absolute after:-z-10  after:bg-[#FFACAC] max-xl:w-[80%] max-xl:after:w-[100%] after:max-lg:h-[250px] max-lg:h-[250px] max-lg:w-[88%] max-lg:h-[220px] max-lg:after:w-full max-lg:after:h-full">
-       <div class="w-[70%] pl-16 pb-[200px] pt-8">
-         <p class="text-white text-4xl pb-6 font-ebgaramond  max-lg:text-2xl  max-lg:w-[100%]">
+        <div class="flex justify-between m-auto relative rounded-tl-[68px]  bg-[#7DC290] w-[970px] h-72 after:top-6 after:left-6 after:content-['']  after:w-[970px] after:h-72  after:absolute after:-z-10  after:bg-[#FFACAC] max-xl:w-[80%] max-xl:after:w-[100%] max-lg:after:h-[250px] max-lg:h-[250px] max-lg:w-[88%] max-lg:h-[220px] max-lg:after:w-full max-lg:after:h-full max-md:w-[85%] max-md:h-[210px]  max-md:after:w-full max-md:after:h-full max-sm:w-[85%] max-sm:h-[210px]  max-sm:after:w-full max-sm:after:h-full max-sm:rounded-tl-[40px] max-sm:after:top-4 max-sm:after:left-4  max-xs:rounded-tl-[40px] max-xs:w-[85%] max-xs:h-[210px]  max-xs:after:w-full max-xs:after:h-full max-xs:after:top-4 max-xs:after:left-4">
+       <div class="w-[70%] pl-16 pb-[200px] pt-8 max-md:w-full max-md:pb-2 max-md:pt-4 max-md:pl-12 max-sm:w-full max-sm:pb-2 max-sm:pt-4 max-sm:pl-7 max-xs:w-full max-xs:pb-2 max-xs:pt-4 max-xs:pl-7">
+         <p class="text-white text-4xl pb-6 font-ebgaramond  max-lg:text-2xl  max-lg:w-full max-md:text-2xl max-sm:text-xl  max-xs:text-xl">
             Get <strong>15% discount </strong>on your first visit
         </p> 
-        <p class="text-white text-lg pb-3 w-[550px] max-xl:text-md  max-lg:text-sm  max-lg:w-[100%]">Leave us your email address or phone number and we will get back to you</p>
+        <p class="text-white text-lg pb-3 w-[550px] max-xl:text-md  max-lg:text-sm  max-lg:w-full max-md:w-full max-md:text-sm  max-sm:text-xs  max-sm:w-[95%] max-xs:w-[95%] max-xs:text-xs ">Leave us your email address or phone number and we will get back to you</p>
         <span class="mr-2 m-auto bg-[#D6F8D6] inline-block w-4 h-4 rounded-full"></span>
-        <p class="text-white text-lg pb-3 inline-block max-xl:text-md  max-lg:text-sm  max-lg:w-[90%]">Get further deals, promotions and updates</p>
-        <div class="relative mt-2 w-[77%] h-[45px] max-lg:text-sm  max-lg:">
-            <input type="text" class="absolute top-0 left-0 w-[65%] text-[#7DC290] h-full pl-4 text-md rounded-l-lg outline-none placeholder:text-[#7DC290]" placeholder="Enter email address/phone number">
-            <button type="submit" class="absolute top-0 right-0 w-[35%] h-full p-3 text-sm bg-[#FFACAC] text-white rounded-r-lg max-lg:text-sm">Get Discount</button>
+        <p class="text-white text-lg pb-3 inline-block max-xl:text-md  max-lg:text-sm  max-lg:w-[90%] max-md:text-sm max-sm:text-xs max-xs:text-xs">Get further deals, promotions and updates</p>
+        <div class="relative mt-2 w-[77%] h-[45px] max-lg:text-sm  max-md:h-[35px] max-sm:h-[30px] max-xs:h-[30px]">
+            <input type="text" class="absolute top-0 left-0 w-[65%] text-[#7DC290] h-full pl-4 text-md rounded-l-lg outline-none placeholder:text-[#7DC290] placeholder:max-md:text-sm placeholder:max-md:text-xs placeholder:max-sm:pl-2 placeholder:max-sm:text-xs placeholder:max-xs:text-[10px] placeholder:max-xs:pl-1" placeholder="Enter email address/phone number">
+            <button type="submit" class="absolute top-0 right-0 w-[35%] h-full p-3 text-sm bg-[#FFACAC] text-white rounded-r-lg max-lg:text-sm max-md:text-sm max-md:flex max-md:items-center max-md:justify-center max-sm:text-xs max-sm:flex max-sm:items-center max-sm:justify-center max-xs:text-[10px] max-xs:w-[40%] max-xs:flex max-xs:items-center max-xs:justify-center">Get Discount</button>
         </div>
        </div>
-       <img src="images/Rectangle15.png" alt="" class="block w-[27%] h-full">
+       <img src="images/Rectangle15.png" alt="" class="block w-[27%] h-full max-md:hidden max-sm:hidden max-xs:hidden">
         </div>
       </section>
-      <section class="bg-[#7DC290] w-full pl-20 pr-20 pt-20 pb-24 min-h-screen flex flex-col" id="services">
-        <h2 class="text-white text-5xl text-center mb-24 font-ebgaramond max-xl:text-4xl max-lg:text-3xl max-lg:mb-12 max-lg:text-4xl">Our Services</h2>
-        <div class="flex gap-6 justify-between max-xl:gap-2 max-lg:flex-wrap max-lg:m-auto max-lg:w-90%">
+      <section class="bg-[#7DC290] w-full pl-20 pr-20 pt-20 pb-24 min-h-screen max-sm:p-16 max-xs:p-16" id="services">
+        <h2 class="text-white text-5xl text-center mb-24 font-ebgaramond max-xl:text-4xl max-lg:text-3xl max-lg:mb-12 max-lg:text-4xl max-md:text-2xl max-md:mb-10 max-sm:text-2xl max-sm:mb-10 max-xs:text-2xl max-xs:mb-10">Our Services</h2>
+        <div class="flex gap-6 justify-between max-xl:gap-2 max-lg:flex-wrap max-lg:m-auto max-lg:w-90% max-md:flex-wrap max-md:m-auto max-md:w-90% max-sm:flex-wrap max-sm:gap-4 max-sm:m-auto max-sm:w-90%  max-xs:flex-wrap max-xs:m-auto max-xs:w-90% max-xs:justify-center">
             <div class="flex flex-col gap-6 items-center max-lg:mb-5">
-                <div class="rounded-full w-54 h-54 p-2 bg-[#FFACAC] flex justify-center items-center max-xl:w-48 max-xl:h-48">
-                    <img src="images/Ellipse149.png" alt="" class="w-52 h-52 max-xl:w-[180px] max-xl:h-[180px]">
+                <div class="rounded-full w-54 h-54 p-2 bg-[#FFACAC] flex justify-center items-center max-xl:w-48 max-xl:h-48 max-md:w-[170px] max-md:h-[170px] max-sm:w-[150px] max-sm:h-[150px] max-xs:w-[130px] max-xs:h-[130px]">
+                    <img src="images/Ellipse149.png" alt="" class="w-52 h-52 max-xl:w-[180px] max-xl:h-[180px] max-md:w-[158px] max-md:h-[158px] max-sm:w-[138px] max-sm:h-[138px] max-xs:w-[118px] max-xs:h-[118px]">
                 </div>
-                <span class="text-white text-lg text-center max-xl:text-md " >Massages</span>
-                <button class="text-white text-md text-center p-2 w-52 hover:bg-[#FFACAC] rounded-md border-4 border-white max-xl:text-sm max-xl:w-36">More</button>
+                <span class="text-white text-lg text-center max-xl:text-md max-md:text-sm max-sm:text-xs max-xs:text-xs">Massages</span>
+                <button class="text-white text-md text-center p-2 w-52 hover:bg-[#FFACAC] rounded-md border-4 border-white max-xl:text-sm max-xl:w-36 max-md:text-sm max-md:w-32 max-md:p-1 max-sm:text-xs max-sm:w-32 max-sm:p-1 max-xs:text-xs max-xs:w-24 max-xs:p-1">More</button>
             </div>
             <div class="flex flex-col gap-6 items-center max-lg:mb-5">
-                <div class="rounded-full w-54 h-54 p-2 bg-[#FFACAC] flex justify-center items-center  max-xl:w-48 max-xl:h-48">
-                    <img src="images/Ellipse150.png" alt="" class="w-52 h-52 max-xl:w-[180px] max-xl:h-[180px]">
+                <div class="rounded-full w-54 h-54 p-2 bg-[#FFACAC] flex justify-center items-center  max-xl:w-48 max-xl:h-48 max-md:w-[170px] max-md:h-[170px] max-sm:w-[150px] max-sm:h-[150px] max-xs:w-[130px] max-xs:h-[130px]">
+                    <img src="images/Ellipse150.png" alt="" class="w-52 h-52 max-xl:w-[180px] max-xl:h-[180px] max-md:w-[158px] max-md:h-[158px] max-sm:w-[138px] max-sm:h-[138px] max-xs:w-[118px] max-xs:h-[118px]">
                 </div>
-                <span class="text-white text-lg text-center max-xl:text-md">Facials</span>
-                <button class="text-white text-md text-center p-2 w-52 hover:bg-[#FFACAC] rounded-md border-4 border-white max-xl:text-sm max-xl:w-36">More</button>
+                <span class="text-white text-lg text-center max-xl:text-md max-md:text-sm max-sm:text-xs max-xs:text-xs">Facials</span>
+                <button class="text-white text-md text-center p-2 w-52 hover:bg-[#FFACAC] rounded-md border-4 border-white max-xl:text-sm max-xl:w-36 max-md:text-sm max-md:w-32 max-md:p-1 max-sm:text-xs max-sm:w-32 max-sm:p-1 max-xs:text-xs max-xs:w-24 max-xs:p-1">More</button>
             </div>
             <div class="flex flex-col gap-6 items-center max-lg:mb-5">
-                <div class="rounded-full w-54 h-54 p-2 bg-[#FFACAC] flex justify-center items-center  max-xl:w-48 max-xl:h-48">
-                    <img src="images/Ellipse151.png" alt="" class="w-52 h-52 max-xl:w-[180px] max-xl:h-[180px]">
+                <div class="rounded-full w-54 h-54 p-2 bg-[#FFACAC] flex justify-center items-center  max-xl:w-48 max-xl:h-48 max-md:w-[170px] max-md:h-[170px] max-sm:w-[150px] max-sm:h-[150px] max-xs:w-[130px] max-xs:h-[130px]">
+                    <img src="images/Ellipse151.png" alt="" class="w-52 h-52 max-xl:w-[180px] max-xl:h-[180px] max-md:w-[158px] max-md:h-[158px] max-sm:w-[138px] max-sm:h-[138px] max-xs:w-[118px] max-xs:h-[118px]">
                 </div>
-                <span class="text-white text-lg text-center max-xl:text-md">Peels And Wraps</span>
-                <button class="text-white text-md text-center p-2 w-52 hover:bg-[#FFACAC] rounded-md border-4 border-white max-xl:text-sm max-xl:w-36">More</button>
+                <span class="text-white text-lg text-center max-xl:text-md max-md:text-sm max-sm:text-xs max-xs:text-xs">Peels And Wraps</span>
+                <button class="text-white text-md text-center p-2 w-52 hover:bg-[#FFACAC] rounded-md border-4 border-white max-xl:text-sm max-xl:w-36 max-md:text-sm max-md:w-32 max-md:p-1 max-sm:text-xs max-sm:w-32 max-sm:p-1 max-xs:text-xs max-xs:w-24 max-xs:p-1">More</button>
             </div>
             <div class="flex flex-col gap-2 items-center max-lg:mb-5">
-                <div class="rounded-full w-54 h-54 p-2 bg-[#FFACAC] flex justify-center items-center  max-xl:w-48 max-xl:h-48">
-                    <img src="images/Ellipse152.png" alt="" class="w-52 h-52 max-xl:w-[180px] max-xl:h-[180px]">
+                <div class="rounded-full w-54 h-54 p-2 bg-[#FFACAC] flex justify-center items-center  max-xl:w-48 max-xl:h-48 max-md:w-[170px] max-md:h-[170px] max-sm:w-[150px] max-sm:h-[150px] max-xs:w-[130px] max-xs:h-[130px]">
+                    <img src="images/Ellipse152.png" alt="" class="w-52 h-52 max-xl:w-[180px] max-xl:h-[180px] max-md:w-[158px] max-md:h-[158px] max-sm:w-[138px] max-sm:h-[138px] max-xs:w-[118px] max-xs:h-[118px]">
                 </div>
-                <span class="text-white text-lg text-center w-[170px] m-auto max-xl:text-md ">Spa Complexes and Other Services</span>
-                <button class="text-white text-md text-center p-2 w-52 hover:bg-[#FFACAC] rounded-md border-4 border-white max-xl:text-sm max-xl:w-36">More</button>
+                <span class="text-white text-lg text-center w-[170px] m-auto max-xl:text-md max-md:text-sm max-sm:text-xs max-xs:text-xs max-xs:w-[120px]">Spa Complexes and Other Services</span>
+                <button class="text-white text-md text-center p-2 w-52 hover:bg-[#FFACAC] rounded-md border-4 border-white max-xl:text-sm max-xl:w-36 max-md:text-sm max-md:w-32 max-md:p-1 max-sm:text-xs max-sm:w-32 max-sm:p-1 max-xs:text-xs max-xs:w-24 max-xs:p-1">More</button>
             </div>
         </div>
       </section>
       <section class="bg-[#FFACAC] w-full pl-16 pr-16 pt-24 pb-24 min-h-screen flex">
-        <div class="w-[1200px] h-[500px] border-4 border-white pr-16 m-auto rounded-tl-[61px] relative flex justify-end gap-4 max-xl:w-[95%] max-xl:h-[420px]  max-xl:pr-0  max-xl:justify-between  max-xl:rounded-tl-[54px] max-lg:w-[95%] max-lg:p-4 max-lg:h-[400px] max-lg:rounded-[54px] max-lg:h-max ">
-            <img src="images/Rectangle19.png" alt="" class="w-[42%] h-[500px] absolute top-[-3.4px] left-[-4px] max-xl:h-full max-xl:relative max-xl:top-0 max-xl:left-0 max-lg:hidden">
-            <div class="w-[50%] max-xl:pr-9 max-lg:w-[90%] max-lg:m-auto">
-                <h3 class="text-white text-5xl text-center mt-10 mb-10 font-ebgaramond max-xl:text-4xl max-xl:mb-3 max-lg:mt-4 max-lg:text-3xl max-lg:mb-2">Book Appointment</h3>
-                <input placeholder='Full Name' type="text" class="h-10 w-full mt-5 mb-7 rounded-md bg-transparent border-2 border-white  pl-4 placeholder:text-white outline-none max-xl:mb-3 max-lg:mb-2">
-                <input placeholder='Enter email address/phone number' type="text" class="h-10 w-full mt-5 mb-7 rounded-md bg-transparent border-2 border-white  pl-4 placeholder:text-white outline-none">
+        <div class="w-[1200px] h-[500px] border-4 border-white pr-16 m-auto rounded-tl-[61px] relative flex justify-end gap-4 max-xl:w-[95%] max-xl:h-[420px]  max-xl:pr-0  max-xl:justify-between  max-xl:rounded-tl-[54px] max-lg:w-[95%] max-lg:p-4 max-lg:h-[400px] max-lg:rounded-[52px] max-lg:h-max max-md:w-[95%] max-md:p-4 max-md:h-[400px] max-md:rounded-[54px] max-md:h-max ">
+            <img src="images/Rectangle19.png" alt="" class="w-[42%] h-[500px] absolute top-[-3.4px] left-[-4px] max-xl:h-full max-xl:relative max-xl:top-0 max-xl:left-0 max-lg:hidden max-md:hidden">
+            <div class="w-[50%] max-xl:pr-9 max-lg:w-[90%] max-lg:m-auto max-md:w-[90%] max-md:m-auto">
+                <h3 class="text-white text-5xl text-center mt-10 mb-10 font-ebgaramond max-xl:text-4xl max-xl:mb-3 max-lg:mt-4 max-lg:text-3xl max-lg:mb-2 max-md:text-2xl max-md:mb-2 max-md:mt-2">Book Appointment</h3>
+                <input placeholder='Full Name' type="text" class="h-10 w-full mt-5 mb-7 rounded-md bg-transparent border-2 border-white  pl-4 placeholder:text-white outline-none max-xl:mb-3 max-lg:mb-2 max-md:mb-2 max-md:h-[35px] max-md:text-sm">
+                <input placeholder='Enter email address/phone number' type="text" class="h-10 w-full mt-5 mb-7 rounded-md bg-transparent border-2 border-white  pl-4 placeholder:text-white outline-none max-md:h-[35px] max-md:text-sm">
                 <div class="flex justify-between w-full h-10 m-auto">
-                    <input placeholder='date' type="date" class="w-[48%] h-full rounded-md bg-transparent border-2 border-white  pl-4  pr-4 outline-none">
-                    <input placeholder="Time" type="time" class="w-[48%] h-full rounded-md bg-transparent border-2 border-white  pl-4  pr-4 outline-none">
+                    <input placeholder='date' type="date" class="w-[48%] h-full rounded-md bg-transparent border-2 border-white  pl-4  pr-4 outline-none max-md:h-[35px] max-md:text-sm">
+                    <input placeholder="Time" type="time" class="w-[48%] h-full rounded-md bg-transparent border-2 border-white  pl-4  pr-4 outline-none max-md:h-[35px] max-md:text-sm">
                 </div>
-                <button class="w-44 rounded-md mt-14 text-center m-auto block mb-3 p-3 text-sm bg-[white] text-[#FFACAC] max-xl:mt-10 max-lg:mt-8">Book Appointment</button>
+                <button class="w-44 rounded-md mt-14 text-center m-auto block mb-3 p-3 text-sm bg-[white] text-[#FFACAC] max-xl:mt-10 max-lg:mt-8 max-md:mt-8">Book Appointment</button>
             </div>
         </div>
       </section>
       <section  class=" w-full pl-16 pr-16 pt-24 pb-24 min-h-screen">
-        <h2 class="text-[#7DC290] text-center w-full text-4xl font-bold pb-7 font-ebgaramond">Reviews</h2>
+        <h2 class="text-[#7DC290] text-center w-full text-4xl font-bold pb-7 font-ebgaramond max-md:text-2xl">Reviews</h2>
         <div class="flex justify-between pt-6 justify-center items-center">
-            <img src="images/Quotes.png" alt="" class="w-8 h-8 max-xl:w-6 max-xl:h-6 max-lg:w-6 max-lg:h-6">
-            <p class="text-[#7DC290] text-lg font-bold max-xl:text-md  max-lg:text-md">See All<span class=""><img src="images/chevron-right(1).png" alt="" class="ml-2 w-6 h-5 inline max-xl:h-4 max-xl:w-5 max-lg:h-4 max-lg:w-5"></span></p>
+            <img src="images/Quotes.png" alt="" class="w-8 h-8 max-xl:w-6 max-xl:h-6 max-lg:w-6 max-lg:h-6 max-md:w-4 max-md:h-4">
+            <p class="text-[#7DC290] text-lg font-bold max-xl:text-md max-lg:text-md max-md:text-sm">See All<span class=""><img src="images/chevron-right(1).png" alt="" class="ml-2 w-6 h-5 inline max-xl:h-4 max-xl:w-5 max-lg:h-4 max-lg:w-5  max-md:h-4 max-md:w-4"></span></p>
         </div>
-        <div class="flex justify-between p-20 max-xl:p-10 max-xl:flex-wrap max-xl:gap-4 max-xl:flex-col max-xl:justify-center max-xl:items-center max-lg:p-10 max-lg:flex-wrap max-lg:gap-4 max-lg:flex-col max-lg:justify-center max-lg:items-center">
-             <div class="bg-[#7DC290] p-14 w-72 h-72 rounded-full flex flex-col gap-3 items-center justify-center max-xl:w-full max-xl:h-72 max-xl:rounded-[50px] max-lg:w-full max-lg:h-72 max-lg:rounded-[50px]">
-                <p class="text-white text-xl text-center">I had a really good time at Unwind.</p>
-                <p class="text-white text-xl">- Becca</p>
+        <div class="flex justify-between p-20 max-xl:p-10 max-xl:flex-wrap max-xl:gap-4 max-xl:flex-wrap max-xl:justify-center max-xl:items-center max-lg:p-10 max-lg:flex-wrap max-lg:gap-4 max-lg:flex-col max-lg:justify-center max-lg:items-center max-md:p-10 max-md:flex-wrap max-md:gap-4 max-md:flex-col max-md:justify-center max-md:items-center">
+             <div class="bg-[#7DC290] p-14 w-72 h-72 rounded-full flex flex-col gap-3 items-center justify-center max-xl:h-max max-xl:rounded-[50px] max-lg:h-max max-lg:rounded-[50px] max-md:w-full max-md:h-max max-md:rounded-[50px]">
+                <p class="text-white text-xl text-center max-md:text-sm">I had a really good time at Unwind.</p>
+                <p class="text-white text-xl text-center max-md:text-sm">- Becca</p>
              </div>
-            <div class="bg-[#7DC290] p-14 w-72 h-72 rounded-full flex flex-col gap-4 items-center justify-center fit max-xl:w-full max-xl:h-72 max-xl:rounded-[50px] max-lg:w-full max-lg:h-72 max-lg:rounded-[50px]">
-                <p class="text-white text-xl text-center">This is my first time visiting a spa and I must say the experience was definitely worth it. Thank you!</p>
-                <p class="text-white text-xl">- Josh</p>
+            <div class="bg-[#7DC290] p-14 w-72 h-72 rounded-full flex flex-col gap-4 items-center justify-center fit max-xl:h-max max-xl:rounded-[50px] max-lg:h-max max-lg:rounded-[50px] max-md:w-full max-md:h-max max-md:rounded-[50px]">
+                <p class="text-white text-xl text-center max-md:text-sm">This is my first time visiting a spa and I must say the experience was definitely worth it. Thank you!</p>
+                <p class="text-white text-xl text-center max-md:text-sm">- Josh</p>
              </div>
-             <div class="bg-[#7DC290] p-14 w-72 h-72 rounded-full flex flex-col gap-4 items-center justify-center max-xl:w-full max-xl:h-72 max-xl:rounded-[50px] max-lg:w-full max-lg:h-72 max-lg:rounded-[50px]">
-                <p class="text-white text-xl text-center">Being at Unwind was a mood! Would definitely try this again.</p>
-                <p class="text-white text-xl">- Zara</p>
+             <div class="bg-[#7DC290] p-14 w-72 h-72 rounded-full flex flex-col gap-4 items-center justify-center max-xl:h-max max-xl:rounded-[50px] max-lg:h-max max-lg:rounded-[50px] max-md:w-full max-md:h-max max-md:rounded-[50px]">
+                <p class="text-white text-xl text-center max-md:text-sm">Being at Unwind was a mood! Would definitely try this again.</p>
+                <p class="text-white text-xl text-center max-md:text-sm">- Zara</p>
              </div>
         </div>
-                  <img src="images/Quotes(1).png" alt="" class="float-right mt-6 w-8 h-8  max-xl:w-6 max-xl:h-6 max-xl:mt-0 max-lg:w-6 max-lg:h-6 max-lg:mt-0">
+                  <img src="images/Quotes(1).png" alt="" class="float-right mt-6 w-8 h-8  max-xl:w-6 max-xl:h-6 max-xl:mt-0 max-lg:w-6 max-lg:h-6 max-lg:mt-0 max-md:w-4 max-md:h-4 max-md:mt-0">
       </section>
-      <section class=" w-full pl-16 pr-16 pt-24 pb-24 min-h-screen bg-[#7DC290] max-xl:pt-12 max-lg:pt-12">
-        <div class="flex justify-between items-center w-[80%] m-auto  max-xl:flex-col  max-xl:gap-4 max-lg:flex-col  max-lg:gap-4  max-lg:w-[90%]">
-            <h2 class="text-white text-5xl font-bold pb-7 font-ebgaramond">Our Specialists</h2>
-            <div class="grid grid-cols-2 gap-x-3 gap-y-6 max-xl:gap-x-9 max-xl:gap-y-9 max-xl:items-center max-lg:gap-x-10 max-lg:gap-y-10 max-lg:items-center">
-                <div class="w-72 h-64 flex flex-col gap-3 p-6  bg-white rounded-tl-[58px] items-center max-xl:w-[360px] max-xl:h-[290px] max-xl:p-4 max-lg:p-4 max-lg:w-72 max-lg:h-max">
+      <section class=" w-full pl-16 pr-16 pt-24 pb-24 min-h-screen bg-[#7DC290] max-xl:pt-12 max-lg:pt-12 max-md:pt-12">
+        <div class="flex justify-between items-center w-[80%] m-auto  max-xl:flex-col  max-xl:gap-4 max-lg:flex-col max-lg:gap-4 max-lg:w-[90%] max-md:flex-col max-md:gap-4 max-md:w-[90%]">
+            <h2 class="text-white text-5xl font-bold pb-7 font-ebgaramond max-md:text-2xl">Our Specialists</h2>
+            <div class="grid grid-cols-2 gap-x-3 gap-y-6 max-xl:gap-x-9 max-xl:gap-y-9 max-xl:items-center max-lg:gap-x-10 max-lg:gap-y-10 max-lg:items-center  max-md:gap-x-10 max-md:gap-y-10 max-md:items-center max-md:items-center">
+                <div class="w-72 h-64 flex flex-col gap-3 p-6  bg-white rounded-tl-[58px] items-center max-xl:w-[360px] max-xl:h-[290px] max-xl:p-4 max-lg:p-4 max-lg:w-72 max-lg:h-max max-md:p-3 max-md:w-52 max-md:h-max max-md:rounded-tl-[44px]">
                   <img src="images/Rectangle 30.png" alt="" class="w-full h-[88%]">
-                  <a href="" class="underline text-[#7DC290] text-lg">Tasha</a>
+                  <a href="" class="underline text-[#7DC290] text-lg max-md:text-sm">Tasha</a>
                 </div>
-                <div class="w-72 h-64 flex flex-col gap-3 p-6  bg-white rounded-tr-[58px] items-center max-xl:w-[360px] max-xl:h-[290px] max-xl:p-4 max-lg:p-4 max-lg:w-72 max-lg:h-max">
+                <div class="w-72 h-64 flex flex-col gap-3 p-6  bg-white rounded-tr-[58px] items-center max-xl:w-[360px] max-xl:h-[290px] max-xl:p-4 max-lg:p-4 max-lg:w-72 max-lg:h-max max-md:p-3 max-md:w-52 max-md:h-max max-md:rounded-tr-[44px]">
                   <img src="images/Rectangle 31.png" alt="" class="w-full h-[88%]">
-                  <a href="" class="underline text-[#7DC290] text-lg">Ada</a>
+                  <a href="" class="underline text-[#7DC290] text-lg max-md:text-sm">Ada</a>
                 </div>
-                <div class="w-72 h-64 flex flex-col-reverse gap-3 p-6 bg-white rounded-bl-[58px] items-center max-xl:w-[360px] max-xl:h-[290px] max-xl:p-4 max-lg:p-4 max-lg:w-72 max-lg:h-max">
+                <div class="w-72 h-64 flex flex-col-reverse gap-3 p-6 bg-white rounded-bl-[58px] items-center max-xl:w-[360px] max-xl:h-[290px] max-xl:p-4 max-lg:p-4 max-lg:w-72 max-lg:h-max max-md:p-3 max-md:w-52 max-md:h-max max-md:rounded-bl-[44px]">
                   <img src="images/unsplash_2EGNqazbAMk.png" alt="" class="w-full h-[88%]">
-                  <a href="" class="underline text-[#7DC290] text-lg">Obinna</a>
+                  <a href="" class="underline text-[#7DC290] text-lg max-md:text-sm">Obinna</a>
                 </div>
-                <div class="w-72 h-64 flex flex-col-reverse gap-3 p-6 bg-white rounded-br-[58px] items-center max-xl:w-[360px] max-xl:h-[290px] max-xl:p-4 max-lg:p-4 max-lg:w-72 max-lg:h-max">
+                <div class="w-72 h-64 flex flex-col-reverse gap-3 p-6 bg-white rounded-br-[58px] items-center max-xl:w-[360px] max-xl:h-[290px] max-xl:p-4 max-lg:p-4 max-lg:w-72 max-lg:h-max max-md:p-3 max-md:w-52 max-md:h-max max-md:rounded-br-[44px]">
                   <img src="images/unsplash_763-mBawsfg.png" alt="" class="w-full h-[88%]">
-                  <a href="" class="underline text-[#7DC290] text-lg">Michael</a>
+                  <a href="" class="underline text-[#7DC290] text-lg max-md:text-sm">Michael</a>
                 </div>
             </div>
         </div>
       </section>
       <section  class=" w-full pl-16 pr-16 pt-12 pb-12 min-h-screen" id="blog">
-           <h2 class="text-center text-5xl text-[#FFACAC] font-bold pb-7 font-ebgaramond">Unwind Blog</h2>
-           <div class="flex justify-between w-[70%] m-auto pt-6 max-xl:flex-wrap gap-6 max-xl:w-[80%] max-xl:justify-center  max-lg:flex-wrap gap-6 max-lg:w-[80%] max-lg:justify-center">
-            <div class=" bg-[#FFACAC] w-[400px] p-6  flex-col flex justify-center gap-6 max-xl:w-[92%] max-lg:w-[92%]">
+           <h2 class="text-center text-5xl text-[#FFACAC] font-bold pb-7 font-ebgaramond max-md:text-2xl">Unwind Blog</h2>
+           <div class="flex justify-between w-[70%] m-auto pt-6 max-xl:flex-wrap gap-6 max-xl:w-[80%] max-xl:justify-center max-lg:flex-wrap gap-6 max-lg:w-[80%] max-lg:justify-center max-md:flex-wrap gap-6 max-md:w-[80%] max-md:justify-center">
+            <div class=" bg-[#FFACAC] w-[400px] p-6  flex-col flex justify-center gap-6 max-xl:w-[92%] max-lg:w-[92%]  max-md:w-[92%]">
                 <img src="images/Rectangle34.png" alt="" class="w-full max-xl:m-auto max-xl:h-[400px]">   
-                <span class="text-lg text-white max-xl:text-xl">27 october 2021</span>   
-                <h3 class="text-2xl text-white font-bold max-xl:text-3xl">Free Your Skin From The Dangers of Hard Water</h3>
-                <p class="text-lg text-white max-xl:text-xl">While there is nothing you can do about hard water in your environment, one should know that bathing with hard water...</p> 
+                <span class="text-lg text-white max-xl:text-xl max-md:text-sm">27 october 2021</span>   
+                <h3 class="text-2xl text-white font-bold max-xl:text-3xl max-md:text-xl">Free Your Skin From The Dangers of Hard Water</h3>
+                <p class="text-lg text-white max-xl:text-xl max-md:text-sm">While there is nothing you can do about hard water in your environment, one should know that bathing with hard water...</p> 
            </div>
-            <div class=" bg-[#FFACAC] w-[400px] p-6 flex-col flex justify-center gap-6 max-xl:pt-6 max-xl:w-[92%] max-lg:w-[92%]">
+            <div class=" bg-[#FFACAC] w-[400px] p-6 flex-col flex justify-center gap-6 max-xl:pt-6 max-xl:w-[92%] max-lg:w-[92%] max-md:w-[92%]">
                 <img src="images/Rectangle35.png" alt="" class="w-full max-xl:m-auto max-xl:h-[400px]">   
-                <span class="text-lg text-white max-xl:text-xl">3rd November 2021</span>   
-                <h3 class="text-2xl text-white font-bold max-xl:text-3xl">How To Best Prep Your Skin for a Cold Season</h3>
-                <p class="text-lg text-white max-xl:text-xl">While most people are excited about the cold dry season, it is important to know that it can be really bad for the skin. The good news is that...</p> 
+                <span class="text-lg text-white max-xl:text-xl max-md:text-sm">3rd November 2021</span>   
+                <h3 class="text-2xl text-white font-bold max-xl:text-3xl max-md:text-xl">How To Best Prep Your Skin for a Cold Season</h3>
+                <p class="text-lg text-white max-xl:text-xl max-md:text-sm">While most people are excited about the cold dry season, it is important to know that it can be really bad for the skin. The good news is that...</p> 
            </div>
         </div>
-        <p class="text-[#FFACAC] text-lg font-bold mt-16 text-center">See More<span class=""><img src="images/chevron-right.png" alt="" class="ml-2 w-7 h-5 inline"></span></p>
+        <p class="text-[#FFACAC] text-lg font-bold mt-16 text-center max-xl:text-md max-lg:text-md max-md:text-sm">See More<span class=""><img src="images/chevron-right.png" alt="" class="ml-2 w-7 h-5 inline max-xl:h-4 max-xl:w-5 max-lg:h-4 max-lg:w-5 max-md:h-4 max-md:w-4"></span></p>
       </section>
       <footer class="bg-[#FFACAC] w-full pl-7 pr-7 pt-12 pb-8" id="contact">
         <div class="flex justify-between">
@@ -248,7 +248,7 @@
                     <img src="images/twitter.png" alt="" class="w-8 h-8">
                 </div>
             </div>
-            <div class="flex flex-col gap-4 items-end text-white">
+            <div class="flex flex-col gap-4 items-end text-white max-md:text-sm">
                 <p>+2348123456789</p>
                 <p>unwindspa@gmail.com</p>
                 <span class="block w-72 h-0.5 border border-white"></span>
@@ -258,21 +258,22 @@
         </div>  
         <span class="block w-full h-0.5 border border-white mt-16 mb-8"></span> 
         <div class="flex justify-between">
-            <div class="flex flex-col gap-4 text-white">
-                <p>Reschedule</p>
-                <p>Gift Cards</p>
-                <p>Contact Us</p>
+            <div class="flex flex-col gap-4 text-white underline max-md:text-sm">
+                <a>Reschedule</a>
+                <a>Gift Cards</a>
+                <a>Contact Us</a>
             </div>
-            <div class="flex flex-col gap-4 items-end text-white">
-                <p>Faqs</p>
-                <p>Privacy Policy</p>
-                <p>About Us</p>
+            <div class="flex flex-col gap-4 items-end text-white underline max-md:text-sm">
+                <a>Faqs</a>
+                <a>Privacy Policy</a>
+                <a>About Us</a>
             </div>
         </div>
         <span class="block w-full h-0.5 border border-white mt-16 mb-8"></span> 
-        <span class="block text-center text-white">Copyright &copy 2021 Unwind Spa</span>
+        <span class="block text-center text-white max-md:text-sm">Copyright &copy 2021 Unwind Spa</span>
       </footer>
 </body>
 <script src="script.js"></script>
 </html>
+
 
