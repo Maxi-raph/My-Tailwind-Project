@@ -27,13 +27,15 @@ links.forEach(li => {
 })
 hamburger.addEventListener('click', () => {
   if (linksContainer.classList.contains('max-xs:hidden') || linksContainer.classList.contains('max-sm:hidden')) {
-    linksContainer.classList.add('flex')
+    linksContainer.classList.add('max-xs:flex')
+    linksContainer.classList.add('max-sm:flex')
     linksContainer.classList.remove('max-xs:hidden')
     linksContainer.classList.remove('max-sm:hidden')
   } else {
     linksContainer.classList.add('max-xs:hidden')
     linksContainer.classList.add('max-sm:hidden')
-    linksContainer.classList.remove('flex')
+    linksContainer.classList.remove('max-xs:flex')
+    linksContainer.classList.remove('max-sm:flex')
   }
   hamburger.classList.toggle("max-sm:bg-transparent");
   hamburger.classList.toggle("max-xs:bg-transparent");
