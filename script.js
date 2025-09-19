@@ -7,18 +7,16 @@ links.forEach(li => {
     let id = e.target.dataset.name
     let section = document.getElementById(id)
     section.scrollIntoView({ behaviour: 'smooth' })
-    if (linksContainer.classList.contains('max-sm:gap-0')) {
+    if (hamburger.style.display !== 'none') {
       linksContainer.classList.add('max-sm:hidden')
-      linksContainer.classList.remove('flex')
       hamburger.classList.remove("max-sm:bg-transparent");
       hamburger.classList.remove("max-sm:before:top-0");
       hamburger.classList.remove("max-sm:before:[rotate:45deg]");
       hamburger.classList.remove("max-sm:after:top-0");
       hamburger.classList.remove("max-sm:after:[rotate:-45deg]");
     }
-    if (linksContainer.classList.contains('max-xs:gap-0')) {
+    if (hamburger.style.display !== 'none') {
       linksContainer.classList.add('max-xs:hidden')
-      linksContainer.classList.remove('flex')
       hamburger.classList.remove("max-xs:bg-transparent");
       hamburger.classList.remove("max-xs:before:top-0");
       hamburger.classList.remove("max-xs:before:[rotate:45deg]");
