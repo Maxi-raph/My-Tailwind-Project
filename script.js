@@ -27,9 +27,7 @@ links.forEach(li => {
     let section = document.getElementById(id)
     section.scrollIntoView({ behaviour: 'smooth' })
     if (hamburger.classList.contains('max-sm:bg-transparent') || hamburger.classList.contains('max-xs:bg-transparent')) {
-      
       removeNavLinks()
-      
       hamburger.classList.remove("max-sm:bg-transparent", "max-sm:before:[rotate:45deg]", "max-sm:after:top-0", "max-sm:after:[rotate:-45deg]", "max-sm:before:top-0");
       hamburger.classList.remove("max-xs:bg-transparent", "max-xs:before:[rotate:45deg]", "max-xs:after:top-0", "max-xs:after:[rotate:-45deg]", "max-xs:before:top-0");
     }
